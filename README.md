@@ -2,4 +2,4 @@
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [Krcisleo](https://github.com/krcisleo)
+[MIT](./LICENSE) License © [Krcisleo](https://github.com/krcisleo)
