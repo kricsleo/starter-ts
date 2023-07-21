@@ -2,7 +2,7 @@
   "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.6.7",
+  "packageManager": "pnpm@8.6.9",
   "description": "",
   "author": "kricsleo <kricsleo@163.com>",
   "license": "MIT",
@@ -45,10 +45,10 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.21.4",
-    "@types/node": "^18.16.19",
+    "@antfu/ni": "^0.21.5",
+    "@types/node": "^18.16.20",
     "bumpp": "^9.1.1",
-    "pnpm": "^8.6.7",
+    "pnpm": "^8.6.9",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6",
     "unbuild": "^1.2.1",
