@@ -2,7 +2,7 @@
   "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.7.4",
+  "packageManager": "pnpm@8.8.0",
   "description": "",
   "author": "kricsleo <kricsleo@163.com>",
   "license": "MIT",
@@ -46,13 +46,13 @@
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.8",
-    "@types/node": "^18.17.14",
+    "@types/node": "^18.18.0",
     "bumpp": "^9.2.0",
-    "pnpm": "^8.7.4",
-    "tsx": "^3.12.8",
+    "pnpm": "^8.8.0",
+    "tsx": "^3.13.0",
     "typescript": "^5.2.2",
     "unbuild": "^1.2.1",
-    "vitest": "^0.34.3"
+    "vitest": "^0.34.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
