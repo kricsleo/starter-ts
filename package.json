@@ -45,8 +45,8 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/node": "^18.19.20",
-    "bumpp": "^9.3.0",
+    "@types/node": "^18.19.21",
+    "bumpp": "^9.3.1",
     "tsx": "^3.14.0",
     "typescript": "^5.3.3",
     "unbuild": "^1.2.1",
