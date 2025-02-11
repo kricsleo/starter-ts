@@ -3,6 +3,17 @@
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@10.3.0",
+  "description": "",
+  "author": "kricsleo <kricsleo@163.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/kricsleo/pkg-name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kricsleo/pkg-name.git"
+  },
+  "bugs": "https://github.com/kricsleo/pkg-name/issues",
+  "keywords": [],
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -25,11 +36,20 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "tsx src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "^18.19.75",
+    "bumpp": "^10.0.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.3",
-    "unbuild": "^3.3.1"
+    "unbuild": "^3.3.1",
+    "vitest": "^3.0.5"
   }
 }
