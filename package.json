@@ -2,9 +2,9 @@
   "name": "pkg-name",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.6.5",
+  "packageManager": "pnpm@10.15.0",
   "description": "",
-  "author": "kricsleo <kricsleo@163.com>",
+  "author": "Kricsleo <kricsleo@163.com>",
   "license": "MIT",
   "homepage": "https://github.com/kricsleo/pkg-name#readme",
   "repository": {
@@ -15,11 +15,12 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
-  "main": "./dist/index.mjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "typesVersions": {
@@ -34,24 +35,20 @@
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub",
-    "start": "tsx src/index.ts",
-    "build": "unbuild",
-    "prepublishOnly": "nr build",
+    "build": "tsdown",
+    "prepublishOnly": "npm run build",
     "release": "bumpp && npm publish",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@types/node": "^18.19.83",
-    "bumpp": "^10.1.0",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2",
-    "unbuild": "^3.5.0",
-    "vitest": "^3.0.9"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
+    "@antfu/eslint-config": "^5.2.1",
+    "@types/node": "^18.19.123",
+    "bumpp": "^10.2.3",
+    "eslint": "^9.33.0",
+    "tsdown": "^0.14.1",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }
